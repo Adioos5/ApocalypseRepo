@@ -1,11 +1,11 @@
-import apocalypse.UI.windows.GameWindow;
+import apocalypse.UI.MainWindow;
 import javafx.embed.swing.JFXPanel;
 
 public class Main {
 
     public static void main(String[] args) {
         JFXPanel panel = new JFXPanel();
-        new GameWindow().runApplication();
+        new MainWindow().runApplication();
     }
 
 }

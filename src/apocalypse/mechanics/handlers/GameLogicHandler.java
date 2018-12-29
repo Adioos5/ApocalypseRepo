@@ -7,6 +7,7 @@ import apocalypse.UI.root.nodes.Player;
 import apocalypse.UI.root.nodes.Shot;
 import apocalypse.UI.containers.ImageContainer;
 import apocalypse.UI.root.nodes.Tile;
+import apocalypse.interfaces.Handler;
 import apocalypse.mechanics.readers.TileMapReader;
 import javafx.animation.AnimationTimer;
 import javafx.scene.Node;
@@ -20,7 +21,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GameLogicHandler {
+public class GameLogicHandler implements Handler {
 
     private RootModifier rootModifier;
     private ImageContainer imageContainer;
@@ -53,6 +54,18 @@ public class GameLogicHandler {
     public GameLogicHandler(RootModifier rootModifier, ImageContainer imageContainer) {
         this.rootModifier = rootModifier;
         this.imageContainer = imageContainer;
+    }
+
+    @Override
+    public void launchHandler() {
+        initRoot();
+    }
+
+    @Override
+    public void disableHandler() {
+        rootModifier.clear();
+        timer.stop();
+        mediaPlayer.stop();
     }
 
     public void initRoot() {
@@ -301,4 +314,6 @@ public class GameLogicHandler {
                 tile.setY(tile.getY() + 5);
         }
     }
+
+
 }
