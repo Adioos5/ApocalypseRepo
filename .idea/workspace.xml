@@ -1,7 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c9c60bc-3761-4066-b7c9-73a0b2c299ec" name="Default Changelist" comment="" />
+    <list default="true" id="1c9c60bc-3761-4066-b7c9-73a0b2c299ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/apocalypse/UI/windows/GameWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Apocalypse/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Apocalypse/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Apocalypse/apocalypse/elements/Enemy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Apocalypse/apocalypse/elements/Shot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Apocalypse/apocalypse/graphics/Window$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Apocalypse/apocalypse/graphics/Window$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Apocalypse/apocalypse/graphics/Window$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Apocalypse/apocalypse/graphics/Window.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Apocalypse/apocalypse/images/NAA Infantry.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Apocalypse/apocalypse/images/ammo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Apocalypse/apocalypse/images/blood.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Apocalypse/apocalypse/images/grass3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Apocalypse/apocalypse/images/mapOfGame.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Apocalypse/apocalypse/images/night grass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Apocalypse/apocalypse/images/night pavement.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Apocalypse/apocalypse/images/night sand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Apocalypse/apocalypse/images/night water.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Apocalypse/apocalypse/images/pavement3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Apocalypse/apocalypse/images/player.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Apocalypse/apocalypse/images/sand2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Apocalypse/apocalypse/images/water2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Apocalypse/apocalypse/images/zombie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Apocalypse/apocalypse/images/zombiee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Apocalypse/apocalypse/mechanics/TileMapReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Apocalypse/apocalypse/music/Oliver Heldens - Gecko (Original Mix).mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apocalypse/elements/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/apocalypse/UI/root/nodes/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apocalypse/elements/Shot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/apocalypse/UI/root/nodes/Shot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apocalypse/graphics/Window.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apocalypse/images/NAA Infantry.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/apocalypse/media/images/NAA Infantry.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apocalypse/images/ammo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/apocalypse/media/images/ammo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apocalypse/images/blood.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/apocalypse/media/images/blood.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apocalypse/images/grass3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/apocalypse/media/images/grass3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apocalypse/images/mapOfGame.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/apocalypse/media/images/mapOfGame.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apocalypse/images/night grass.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/apocalypse/media/images/night grass.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apocalypse/images/night pavement.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/apocalypse/media/images/night pavement.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apocalypse/images/night sand.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/apocalypse/media/images/night sand.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apocalypse/images/night water.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/apocalypse/media/images/night water.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apocalypse/images/pavement3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/apocalypse/media/images/pavement3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apocalypse/images/player.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/apocalypse/media/images/player.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apocalypse/images/sand2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/apocalypse/media/images/sand2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apocalypse/images/water2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/apocalypse/media/images/water2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apocalypse/images/zombie.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/apocalypse/media/images/zombie.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apocalypse/images/zombiee.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/apocalypse/media/images/zombiee.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apocalypse/mechanics/TileMapReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/apocalypse/mechanics/readers/TileMapReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apocalypse/music/Oliver Heldens - Gecko (Original Mix).mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/apocalypse/media/music/Oliver Heldens - Gecko (Original Mix).mp3" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,14 +121,56 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="203903130">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="22" />
+          <entry key="java" value="2888" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="2888" />
+          <entry key="PLAIN_TEXT" value="22" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+            <state relative-caret-position="85">
+              <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/apocalypse/UI/windows/GameWindow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,10 +179,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/apocalypse/graphics/Window.java">
+        <entry file="file://$PROJECT_DIR$/src/apocalypse/mechanics/handlers/GameLogicHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="226" lean-forward="true" selection-start-line="226" selection-end-line="226" />
+            <state relative-caret-position="281">
+              <caret line="211" column="44" lean-forward="true" selection-start-line="211" selection-start-column="44" selection-end-line="211" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,40 +191,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/apocalypse/elements/Enemy.java">
+        <entry file="file://$PROJECT_DIR$/src/apocalypse/UI/root/nodes/Tile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/apocalypse/mechanics/TileMapReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+            <state relative-caret-position="323">
+              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#391#392#0" expanded="true" />
+                <element signature="e#417#418#0" expanded="true" />
+                <element signature="e#458#459#0" expanded="true" />
+                <element signature="e#488#489#0" expanded="true" />
+                <element signature="e#519#520#0" expanded="true" />
+                <element signature="e#546#547#0" expanded="true" />
+                <element signature="e#586#587#0" expanded="true" />
+                <element signature="e#618#619#0" expanded="true" />
+                <element signature="e#646#647#0" expanded="true" />
+                <element signature="e#670#671#0" expanded="true" />
+                <element signature="e#704#705#0" expanded="true" />
+                <element signature="e#730#731#0" expanded="true" />
+                <element signature="e#758#759#0" expanded="true" />
+                <element signature="e#782#783#0" expanded="true" />
+                <element signature="e#816#817#0" expanded="true" />
+                <element signature="e#842#843#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/map.txt">
+        <entry file="file://$PROJECT_DIR$/src/apocalypse/mechanics/readers/TileMapReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/apocalypse/elements/Shot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+            <state relative-caret-position="136">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -152,6 +242,9 @@
     <dirStrings>
       <dir>C:\Users\Adrian Cieśla\Desktop\DropThatSanta!\src</dir>
     </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="projectSyncType">
@@ -172,74 +265,109 @@
         <option value="$PROJECT_DIR$/src/graphics/Window.java" />
         <option value="$PROJECT_DIR$/src/apocalypse/mechanics/TileMapReader.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/apocalypse/graphics/ImageContainer.java" />
+        <option value="$PROJECT_DIR$/src/apocalypse/nodes/Player.java" />
+        <option value="$PROJECT_DIR$/src/apocalypse/mechanics/RootModifier.java" />
         <option value="$PROJECT_DIR$/src/apocalypse/graphics/Window.java" />
+        <option value="$PROJECT_DIR$/src/apocalypse/UI/Window.java" />
+        <option value="$PROJECT_DIR$/src/apocalypse/media/LogicHandler.java" />
+        <option value="$PROJECT_DIR$/src/apocalypse/UI/ImageContainer.java" />
+        <option value="$PROJECT_DIR$/src/apocalypse/mechanics/LogicHandler.java" />
+        <option value="$PROJECT_DIR$/src/apocalypse/mechanics/readers/TileMapReader.java" />
+        <option value="$PROJECT_DIR$/src/apocalypse/UI/MainWindow.java" />
+        <option value="$PROJECT_DIR$/src/apocalypse/UI/windows/MainWindow.java" />
+        <option value="$PROJECT_DIR$/src/apocalypse/UI/windows/GameWindow.java" />
+        <option value="$PROJECT_DIR$/src/apocalypse/UI/root/nodes/Tile.java" />
+        <option value="$PROJECT_DIR$/src/apocalypse/mechanics/handlers/GameLogicHandler.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="352" />
     <option name="y" value="15" />
     <option name="width" value="697" />
     <option name="height" value="735" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Apocalypse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Apocalypse" type="462c0819:PsiDirectoryNode" />
+              <item name="ApocalypseRepo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ApocalypseRepo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Apocalypse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Apocalypse" type="462c0819:PsiDirectoryNode" />
+              <item name="ApocalypseRepo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ApocalypseRepo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Apocalypse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Apocalypse" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="apocalypse" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Apocalypse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Apocalypse" type="462c0819:PsiDirectoryNode" />
+              <item name="ApocalypseRepo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ApocalypseRepo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="apocalypse" type="462c0819:PsiDirectoryNode" />
-              <item name="mechanics" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Apocalypse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Apocalypse" type="462c0819:PsiDirectoryNode" />
+              <item name="ApocalypseRepo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ApocalypseRepo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="apocalypse" type="462c0819:PsiDirectoryNode" />
-              <item name="music" type="462c0819:PsiDirectoryNode" />
+              <item name="UI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ApocalypseRepo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ApocalypseRepo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="apocalypse" type="462c0819:PsiDirectoryNode" />
+              <item name="UI" type="462c0819:PsiDirectoryNode" />
+              <item name="root" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ApocalypseRepo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ApocalypseRepo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="apocalypse" type="462c0819:PsiDirectoryNode" />
+              <item name="UI" type="462c0819:PsiDirectoryNode" />
+              <item name="root" type="462c0819:PsiDirectoryNode" />
+              <item name="nodes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ApocalypseRepo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ApocalypseRepo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="apocalypse" type="462c0819:PsiDirectoryNode" />
+              <item name="UI" type="462c0819:PsiDirectoryNode" />
+              <item name="windows" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546089760006" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546100473602" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Adrian Cieśla\Desktop\DropThatSanta!\src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Adrian Cieśla\Desktop\ApocalypseRepo\src\apocalypse\media\images\images" />
       <recent name="C:\Users\Adrian Cieśla\Desktop\Apocalypse\src\apocalypse\music" />
       <recent name="C:\Users\Adrian Cieśla\Desktop\Apocalypse\src\images" />
       <recent name="C:\Users\Adrian Cieśla\Desktop\DropThatSanta!\src" />
       <recent name="C:\Users\Adrian Cieśla\Desktop\DropThatSanta!" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Adrian Cieśla\Desktop\DropThatSanta!\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -282,10 +410,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30786687" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31240544" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -294,7 +422,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49394855" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49394855" visible="true" weight="0.039344262" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924356" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -321,7 +449,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/apocalypse/images/player.png">
+    <entry file="file://$PROJECT_DIR$/src/apocalypse/media/images/player.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/String.java">
@@ -338,24 +466,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/apocalypse/elements/Enemy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/apocalypse/elements/Shot.java">
+    <entry file="file://$PROJECT_DIR$/src/apocalypse/UI/root/nodes/Shot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/apocalypse/mechanics/TileMapReader.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        <state relative-caret-position="120">
+          <caret line="747" selection-start-line="747" selection-end-line="747" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/apocalypse/UI/root/nodes/Enemy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/apocalypse/UI/root/nodes/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding>
+            <element signature="e#130#131#0" expanded="true" />
+            <element signature="e#172#173#0" expanded="true" />
+            <element signature="e#245#246#0" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/apocalypse/UI/root/RootModifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#381#382#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/apocalypse/UI/containers/ImageContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#686#687#0" expanded="true" />
+            <element signature="e#733#734#0" expanded="true" />
+            <element signature="e#769#770#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#877#878#0" expanded="true" />
+            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#972#973#0" expanded="true" />
+            <element signature="e#1015#1016#0" expanded="true" />
+            <element signature="e#1047#1048#0" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
+            <element signature="e#1110#1111#0" expanded="true" />
+            <element signature="e#1155#1156#0" expanded="true" />
+            <element signature="e#1189#1190#0" expanded="true" />
+            <element signature="e#1227#1228#0" expanded="true" />
+            <element signature="e#1258#1259#0" expanded="true" />
+            <element signature="e#1309#1310#0" expanded="true" />
+            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="e#1385#1386#0" expanded="true" />
+            <element signature="e#1414#1415#0" expanded="true" />
+            <element signature="e#1461#1462#0" expanded="true" />
+            <element signature="e#1497#1498#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/apocalypse/mechanics/readers/TileMapReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -364,18 +573,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        <state relative-caret-position="85">
+          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/apocalypse/graphics/Window.java">
+    <entry file="file://$PROJECT_DIR$/src/apocalypse/UI/windows/GameWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="226" lean-forward="true" selection-start-line="226" selection-end-line="226" />
+        <state relative-caret-position="323">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/apocalypse/UI/root/nodes/Tile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding>
+            <element signature="e#391#392#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#488#489#0" expanded="true" />
+            <element signature="e#519#520#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#646#647#0" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#730#731#0" expanded="true" />
+            <element signature="e#758#759#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
+            <element signature="e#816#817#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/apocalypse/mechanics/handlers/GameLogicHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="211" column="44" lean-forward="true" selection-start-line="211" selection-start-column="44" selection-end-line="211" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

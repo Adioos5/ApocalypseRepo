@@ -1,4 +1,4 @@
-package apocalypse.mechanics;
+package apocalypse.mechanics.readers;
 
 import java.io.IOException;
 import java.nio.file.Files;

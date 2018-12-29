@@ -1,4 +1,4 @@
-package apocalypse.elements;
+package apocalypse.UI.root.nodes;
 
 import javafx.scene.image.ImageView;
 
