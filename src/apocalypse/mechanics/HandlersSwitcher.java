@@ -43,7 +43,7 @@ public class HandlersSwitcher {
         rootModifier = new RootModifier(stage);
     }
     private void initHandlers(){
-        gameLogicHandler = new GameLogicHandler(rootModifier,imageContainer);
+        gameLogicHandler = new GameLogicHandler(rootModifier,imageContainer,this);
     }
 
 }

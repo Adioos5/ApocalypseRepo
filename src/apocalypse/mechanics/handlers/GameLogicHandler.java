@@ -8,6 +8,7 @@ import apocalypse.UI.root.nodes.Shot;
 import apocalypse.UI.containers.ImageContainer;
 import apocalypse.UI.root.nodes.Tile;
 import apocalypse.interfaces.Handler;
+import apocalypse.mechanics.HandlersSwitcher;
 import apocalypse.mechanics.readers.TileMapReader;
 import javafx.animation.AnimationTimer;
 import javafx.scene.Node;
@@ -25,6 +26,7 @@ public class GameLogicHandler implements Handler {
 
     private RootModifier rootModifier;
     private ImageContainer imageContainer;
+    private HandlersSwitcher handlersSwitcher;
 
     private int tileSize = 48;
     private double enemySpeed = 1;
@@ -51,9 +53,10 @@ public class GameLogicHandler implements Handler {
 
     private AnimationTimer timer;
 
-    public GameLogicHandler(RootModifier rootModifier, ImageContainer imageContainer) {
+    public GameLogicHandler(RootModifier rootModifier, ImageContainer imageContainer, HandlersSwitcher handlersSwitcher) {
         this.rootModifier = rootModifier;
         this.imageContainer = imageContainer;
+        this.handlersSwitcher = handlersSwitcher;
     }
 
     @Override
