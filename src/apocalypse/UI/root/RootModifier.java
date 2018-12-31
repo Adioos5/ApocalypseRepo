@@ -23,4 +23,9 @@ public class RootModifier {
     public void clear(){
         root.getChildren().clear();
     }
+
+    public boolean contains(Object o){
+        return root.getChildren().contains(o);
+    }
+
 }

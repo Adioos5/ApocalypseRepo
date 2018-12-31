@@ -12,6 +12,8 @@ public class ImageContainer {
     private Image water;
     private Image pavement;
     private Image zombie;
+    private Image craftingTable;
+    private Image mysteriousChest;
 
     public ImageContainer() {
 
@@ -23,6 +25,24 @@ public class ImageContainer {
         water = new Image("apocalypse/media/images/night water.png");
         pavement = new Image("apocalypse/media/images/night pavement.png");
         zombie = new Image("apocalypse/media/images/zombiee.png");
+        craftingTable = new Image("apocalypse/media/images/crafting table.png");
+        mysteriousChest = new Image("apocalypse/media/images/mysterious chest.png");
+    }
+
+    public Image getMysteriousChest() {
+        return mysteriousChest;
+    }
+
+    public void setMysteriousChest(Image mysteriousChest) {
+        this.mysteriousChest = mysteriousChest;
+    }
+
+    public Image getCraftingTable() {
+        return craftingTable;
+    }
+
+    public void setCraftingTable(Image craftingTable) {
+        this.craftingTable = craftingTable;
     }
 
     public Image getShell() {

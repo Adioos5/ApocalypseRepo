@@ -2,11 +2,8 @@ package apocalypse.mechanics.handlers;
 
 
 import apocalypse.UI.root.RootModifier;
-import apocalypse.UI.root.nodes.Enemy;
-import apocalypse.UI.root.nodes.Player;
-import apocalypse.UI.root.nodes.Shot;
+import apocalypse.UI.root.nodes.*;
 import apocalypse.UI.containers.ImageContainer;
-import apocalypse.UI.root.nodes.Tile;
 import apocalypse.interfaces.Handler;
 import apocalypse.mechanics.HandlersSwitcher;
 import apocalypse.mechanics.readers.TileMapReader;
@@ -17,6 +14,9 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Text;
 
 import java.net.URL;
 import java.util.ArrayList;
@@ -27,6 +27,10 @@ public class GameLogicHandler implements Handler {
     private RootModifier rootModifier;
     private ImageContainer imageContainer;
     private HandlersSwitcher handlersSwitcher;
+    private UsageSpot craftingTable;
+    private UsageSpot mysteriousChest;
+    private UsageSpot drugShop;
+    private UsageSpot ammoShop;
 
     private int tileSize = 48;
     private double enemySpeed = 1;
@@ -46,9 +50,11 @@ public class GameLogicHandler implements Handler {
 
     private MediaPlayer mediaPlayer;
 
+    private List<UsageSpot>usageSpots = new ArrayList<>();
     private List<Enemy> enemies = new ArrayList<>();
     private List<Shot> shots = new ArrayList<>();
     private List<ImageView> movableTiles = new ArrayList<>();
+    private List<Text> movableTexts = new ArrayList<>();
     private List<ImageView> bloodTraces = new ArrayList<>();
 
     private AnimationTimer timer;
@@ -66,9 +72,8 @@ public class GameLogicHandler implements Handler {
 
     @Override
     public void disableHandler() {
-        rootModifier.clear();
-        timer.stop();
-        mediaPlayer.stop();
+        emptyLists();
+        stopProcesses();
     }
 
     public void initRoot() {
@@ -142,10 +147,34 @@ public class GameLogicHandler implements Handler {
             @Override
             public void handle(long now) {
 
-                if (Math.random() < enemyAppearanceChances)
+                if (Math.random() < enemyAppearanceChances) {
                     initEnemy();
+                    for (UsageSpot usageSpot:usageSpots) {
+                        if (rootModifier.contains(usageSpot.getNotification().getText())) {
+                            rootModifier.remove(usageSpot.getNotification().getRectangle());
+                            rootModifier.remove(usageSpot.getNotification().getText());
+
+                            rootModifier.add(usageSpot.getNotification().getRectangle());
+                            rootModifier.add(usageSpot.getNotification().getText());
+
+                        }
+                    }
+                }
+
+                for (UsageSpot usageSpot:usageSpots){
+                    if(player.getImg().getBoundsInParent().intersects(usageSpot.getImg().getBoundsInParent())&&!rootModifier.contains(usageSpot.getText())){
+                        rootModifier.add(usageSpot.getText());
+                        rootModifier.add(usageSpot.getNotification().getRectangle());
+                        rootModifier.add(usageSpot.getNotification().getText());
+                    } else if(!player.getImg().getBoundsInParent().intersects(usageSpot.getImg().getBoundsInParent())&&rootModifier.contains(usageSpot.getText())){
+                        rootModifier.remove(usageSpot.getText());
+                        rootModifier.remove(usageSpot.getNotification().getRectangle());
+                        rootModifier.remove(usageSpot.getNotification().getText());
+                    }
+                }
 
                 handleMovableTiles();
+                handleMovableTexts();
                 handleShotMechanics();
                 handleEnemiesMovementMechanics();
 
@@ -240,6 +269,24 @@ public class GameLogicHandler implements Handler {
                 }
             }
         }
+
+        craftingTable = new UsageSpot(new ImageView(imageContainer.getCraftingTable()),new Text("Crafting Table"),96,96,2300,740,new Notification(new Rectangle(200,100, Color.BLACK), new Text("Press \"e\" to open crafting table")), new CraftingTableHandler());
+
+        movableTiles.add(craftingTable.getImg());
+        movableTexts.add(craftingTable.getText());
+        rootModifier.add(craftingTable.getImg());
+        rootModifier.add(craftingTable.getText());
+
+        mysteriousChest = new UsageSpot(new ImageView(imageContainer.getMysteriousChest()),new Text("Mysterious Chest"),192,96,1700,740,new Notification(new Rectangle(200,100, Color.BLACK), new Text("Press \"e\" to open mysterious chest")), new MysteriousChestHandler());
+
+        movableTiles.add(mysteriousChest.getImg());
+        movableTexts.add(mysteriousChest.getText());
+        rootModifier.add(mysteriousChest.getImg());
+        rootModifier.add(mysteriousChest.getText());
+
+        usageSpots.add(craftingTable);
+        usageSpots.add(mysteriousChest);
+
     }
 
     private void initMusic() {
@@ -271,11 +318,11 @@ public class GameLogicHandler implements Handler {
 
                         enemies.remove(enemy);
                         bloodTraces.add(enemy.getImg());
-                        shots.remove(shot);
 
+                        shots.remove(shot);
                         rootModifier.remove(shot.getShotRect());
-                        rootModifier.remove(player.getImg());
-                        rootModifier.add(player.getImg());
+
+                        repaint();
                     }
                 }
             }
@@ -315,6 +362,51 @@ public class GameLogicHandler implements Handler {
                 tile.setY(tile.getY() - 5);
             if (moveUp && movableTiles.get(0).getY() <= 0)
                 tile.setY(tile.getY() + 5);
+        }
+    }
+    private void handleMovableTexts() {
+        for (Text text:movableTexts) {
+            if (moveRight)
+                text.setX(text.getX() - 5);
+            if (moveLeft && movableTiles.get(0).getX() <= 0)
+                text.setX(text.getX() + 5);
+            if (moveDown)
+                text.setY(text.getY() - 5);
+            if (moveUp && movableTiles.get(0).getY() <= 0)
+                text.setY(text.getY() + 5);
+        }
+    }
+
+    private void emptyLists(){
+        movableTiles.clear();
+        enemies.clear();
+        shots.clear();
+        bloodTraces.clear();
+
+        rootModifier.clear();
+    }
+
+    private void stopProcesses(){
+        timer.stop();
+        mediaPlayer.stop();
+    }
+
+    private void repaint() {
+
+        for(Enemy enemy:enemies){
+            rootModifier.remove(enemy.getImg());
+            rootModifier.add(enemy.getImg());
+        }
+
+        rootModifier.remove(player.getImg());
+        rootModifier.add(player.getImg());
+
+        if (rootModifier.contains(craftingTable.getNotification().getText())) {
+            rootModifier.remove(craftingTable.getNotification().getRectangle());
+            rootModifier.remove(craftingTable.getNotification().getText());
+
+            rootModifier.add(craftingTable.getNotification().getRectangle());
+            rootModifier.add(craftingTable.getNotification().getText());
         }
     }
 
