@@ -12,4 +12,9 @@ public class CraftingTableHandler implements Handler {
     public void disableHandler() {
 
     }
+
+    @Override
+    public int getType() {
+        return 0;
+    }
 }

@@ -29,8 +29,8 @@ public class GameLogicHandler implements Handler {
     private HandlersSwitcher handlersSwitcher;
     private UsageSpot craftingTable;
     private UsageSpot mysteriousChest;
-    private UsageSpot drugShop;
-    private UsageSpot ammoShop;
+    private UsageSpot firstAidKit;
+    private UsageSpot ammoKit;
 
     private int tileSize = 48;
     private double enemySpeed = 1;
@@ -57,13 +57,21 @@ public class GameLogicHandler implements Handler {
     private List<Text> movableTexts = new ArrayList<>();
     private List<ImageView> bloodTraces = new ArrayList<>();
 
+    private int type;
     private AnimationTimer timer;
 
-    public GameLogicHandler(RootModifier rootModifier, ImageContainer imageContainer, HandlersSwitcher handlersSwitcher) {
+    public GameLogicHandler(RootModifier rootModifier, ImageContainer imageContainer, HandlersSwitcher handlersSwitcher, int type) {
         this.rootModifier = rootModifier;
         this.imageContainer = imageContainer;
         this.handlersSwitcher = handlersSwitcher;
+        this.type = type;
     }
+
+    public int getType() {
+        return type;
+    }
+
+
 
     @Override
     public void launchHandler() {
@@ -74,6 +82,7 @@ public class GameLogicHandler implements Handler {
     public void disableHandler() {
         emptyLists();
         stopProcesses();
+        rootModifier.clear();
     }
 
     public void initRoot() {
@@ -108,6 +117,17 @@ public class GameLogicHandler implements Handler {
                 }
                 bloodTraces.clear();
                 enemies.clear();
+                break;
+            case E:
+                for(UsageSpot usageSpot:usageSpots){
+                    if(player.getImg().getBoundsInParent().intersects(usageSpot.getImg().getBoundsInParent())){
+                        disableHandler();
+                        handlersSwitcher.recogniseHandlerAndSwitch(usageSpot.getHandler().getType());
+                        usageSpot.getHandler().launchHandler();
+                    }
+                }
+                break;
+                default:
 
         }
     }
@@ -126,6 +146,7 @@ public class GameLogicHandler implements Handler {
             case A:
                 moveLeft = false;
                 break;
+                default:
         }
     }
 
@@ -271,27 +292,38 @@ public class GameLogicHandler implements Handler {
         }
 
         craftingTable = new UsageSpot(new ImageView(imageContainer.getCraftingTable()),new Text("Crafting Table"),96,96,2300,740,new Notification(new Rectangle(200,100, Color.BLACK), new Text("Press \"e\" to open crafting table")), new CraftingTableHandler());
+        firstAidKit = new UsageSpot(new ImageView(imageContainer.getFirstAidKit()),new Text("First Aid Kit"),192,96,1800,1140,new Notification(new Rectangle(200,100, Color.BLACK), new Text("Press \"e\" to open first aid kit")), handlersSwitcher.getFirstAidKitHandler());
+        mysteriousChest = new UsageSpot(new ImageView(imageContainer.getMysteriousChest()),new Text("Mysterious Chest"),192,96,1800,740,new Notification(new Rectangle(200,100, Color.BLACK), new Text("Press \"e\" to open mysterious chest")), handlersSwitcher.getMysteriousChestHandler());
+        ammoKit = new UsageSpot(new ImageView(imageContainer.getAmmoKit()),new Text("Ammo Kit"),192,96,2300,1140,new Notification(new Rectangle(200,100, Color.BLACK), new Text("Press \"e\" to open ammo kit")), handlersSwitcher.getAmmoKitHandler());
 
         movableTiles.add(craftingTable.getImg());
         movableTexts.add(craftingTable.getText());
-        rootModifier.add(craftingTable.getImg());
-        rootModifier.add(craftingTable.getText());
-
-        mysteriousChest = new UsageSpot(new ImageView(imageContainer.getMysteriousChest()),new Text("Mysterious Chest"),192,96,1700,740,new Notification(new Rectangle(200,100, Color.BLACK), new Text("Press \"e\" to open mysterious chest")), new MysteriousChestHandler());
 
         movableTiles.add(mysteriousChest.getImg());
         movableTexts.add(mysteriousChest.getText());
+
+        movableTiles.add(firstAidKit.getImg());
+        movableTexts.add(firstAidKit.getText());
+
+        movableTiles.add(ammoKit.getImg());
+        movableTexts.add(ammoKit.getText());
+
+        rootModifier.add(craftingTable.getImg());
         rootModifier.add(mysteriousChest.getImg());
-        rootModifier.add(mysteriousChest.getText());
+        rootModifier.add(firstAidKit.getImg());
+        rootModifier.add(ammoKit.getImg());
 
         usageSpots.add(craftingTable);
         usageSpots.add(mysteriousChest);
+        usageSpots.add(firstAidKit);
+        usageSpots.add(ammoKit);
 
     }
 
     private void initMusic() {
 
-        final URL songPath = getClass().getResource("/apocalypse/media/music/Oliver Heldens - Gecko (Original Mix).mp3");
+        //final URL songPath = getClass().getResource("/apocalypse/media/music/Oliver Heldens - Gecko (Original Mix).mp3");
+        final URL songPath = getClass().getResource("/apocalypse/media/music/Avicii - Levels.mp3");
         Media sound = new Media(songPath.toString());
         mediaPlayer = new MediaPlayer(sound);
         mediaPlayer.setOnEndOfMedia(new Runnable() {
@@ -388,7 +420,7 @@ public class GameLogicHandler implements Handler {
 
     private void stopProcesses(){
         timer.stop();
-        mediaPlayer.stop();
+//        mediaPlayer.stop();
     }
 
     private void repaint() {

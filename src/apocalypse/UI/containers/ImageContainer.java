@@ -14,6 +14,8 @@ public class ImageContainer {
     private Image zombie;
     private Image craftingTable;
     private Image mysteriousChest;
+    private Image firstAidKit;
+    private Image ammoKit;
 
     public ImageContainer() {
 
@@ -27,6 +29,25 @@ public class ImageContainer {
         zombie = new Image("apocalypse/media/images/zombiee.png");
         craftingTable = new Image("apocalypse/media/images/crafting table.png");
         mysteriousChest = new Image("apocalypse/media/images/mysterious chest.png");
+        firstAidKit = new Image("apocalypse/media/images/first aid.png");
+        ammoKit = new Image("apocalypse/media/images/ammo kit.png");
+
+    }
+
+    public Image getAmmoKit() {
+        return ammoKit;
+    }
+
+    public void setAmmoKit(Image ammoKit) {
+        this.ammoKit = ammoKit;
+    }
+
+    public Image getFirstAidKit() {
+        return firstAidKit;
+    }
+
+    public void setFirstAidKit(Image firstAidKit) {
+        this.firstAidKit = firstAidKit;
     }
 
     public Image getMysteriousChest() {

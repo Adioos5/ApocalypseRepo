@@ -18,7 +18,7 @@ public class MainWindow extends Application {
         stage.setScene(new Scene(new Pane()));
 
         handlersSwitcher = new HandlersSwitcher(stage);
-        handlersSwitcher.switchOnGameHandler();
+        handlersSwitcher.recogniseHandlerAndSwitch(1);
 
         initFrame(stage);
 
