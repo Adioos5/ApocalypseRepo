@@ -91,11 +91,11 @@ public class HandlersSwitcher {
     public void switchOnMysteriousChestHandler(){
 
         stage.getScene().setOnMouseMoved(e -> {
-            gameLogicHandler.mouseMoved(e);
+            mysteriousChestHandler.mouseMoved(e);
 
         });
         stage.getScene().setOnMouseClicked(e -> {
-            gameLogicHandler.mouseClicked(e);
+            mysteriousChestHandler.mouseClicked(e);
         });
 
         mysteriousChestHandler.launchHandler();

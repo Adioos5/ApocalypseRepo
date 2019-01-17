@@ -323,7 +323,7 @@ public class GameLogicHandler implements Handler {
     private void initMusic() {
 
         //final URL songPath = getClass().getResource("/apocalypse/media/music/Oliver Heldens - Gecko (Original Mix).mp3");
-        final URL songPath = getClass().getResource("/apocalypse/media/music/Avicii - Levels.mp3");
+        final URL songPath = getClass().getResource("/apocalypse/media/music/Ghost Rider - Monster [Skillet].mp3");
         Media sound = new Media(songPath.toString());
         mediaPlayer = new MediaPlayer(sound);
         mediaPlayer.setOnEndOfMedia(new Runnable() {

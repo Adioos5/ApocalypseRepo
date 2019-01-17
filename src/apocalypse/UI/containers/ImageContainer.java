@@ -16,6 +16,11 @@ public class ImageContainer {
     private Image mysteriousChest;
     private Image firstAidKit;
     private Image ammoKit;
+    private Image questionMark;
+    private Image weapon1;
+    private Image weapon2;
+    private Image weapon3;
+
 
     public ImageContainer() {
 
@@ -31,7 +36,43 @@ public class ImageContainer {
         mysteriousChest = new Image("apocalypse/media/images/mysterious chest.png");
         firstAidKit = new Image("apocalypse/media/images/first aid.png");
         ammoKit = new Image("apocalypse/media/images/ammo kit.png");
+        questionMark = new Image("apocalypse/media/images/question mark.png");
+        weapon1 = new Image("apocalypse/media/images/w1.png");
+        weapon2 = new Image("apocalypse/media/images/w2.png");
+        weapon3 = new Image("apocalypse/media/images/w3.png");
 
+    }
+
+    public Image getWeapon1() {
+        return weapon1;
+    }
+
+    public void setWeapon1(Image weapon1) {
+        this.weapon1 = weapon1;
+    }
+
+    public Image getWeapon2() {
+        return weapon2;
+    }
+
+    public void setWeapon2(Image weapon2) {
+        this.weapon2 = weapon2;
+    }
+
+    public Image getWeapon3() {
+        return weapon3;
+    }
+
+    public void setWeapon3(Image weapon3) {
+        this.weapon3 = weapon3;
+    }
+
+    public Image getQuestionMark() {
+        return questionMark;
+    }
+
+    public void setQuestionMark(Image questionMark) {
+        this.questionMark = questionMark;
     }
 
     public Image getAmmoKit() {

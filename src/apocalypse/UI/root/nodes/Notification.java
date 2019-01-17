@@ -15,14 +15,14 @@ public class Notification {
     private Rectangle rectangle;
     private Text text;
     private List<String> lines = new ArrayList<>();
-    private static final int lettersPixelsHeight = 13;
+    private static final int lettersPixelsHeight = 14;
     private static final int lettersPixelsWidth = 10;
 
     public Notification(Rectangle rectangle, Text text){
         this.rectangle = rectangle;
         this.text = text;
 
-        setBasicNotificaionOptions();
+        setBasicNotificationOptions();
         adjustTextAndRectangle();
 
     }
@@ -43,7 +43,7 @@ public class Notification {
         this.text = text;
     }
 
-    public void setBasicNotificaionOptions(){
+    public void setBasicNotificationOptions(){
         rectangle.setX(50);
         rectangle.setY(50);
 
